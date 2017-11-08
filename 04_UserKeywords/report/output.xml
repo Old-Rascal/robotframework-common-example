@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170805 21:20:30.304" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\04_UserKeywords\Tests\UserKeywords.robot" id="s1" name="UserKeywords">
+<kw type="setup" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Start to do something</arg>
+</arguments>
+<msg timestamp="20170805 21:20:30.389" level="INFO">Start to do something</msg>
+<status status="PASS" endtime="20170805 21:20:30.389" starttime="20170805 21:20:30.389"></status>
+</kw>
+<test id="s1-t1" name="Check if Python web site is up and running">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170805 21:20:30.404" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170805 21:20:33.799" starttime="20170805 21:20:30.404"></status>
+</kw>
+<kw name="Test Python site">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://www.python.org</arg>
+</arguments>
+<msg timestamp="20170805 21:20:33.800" level="INFO">Opening url 'https://www.python.org'</msg>
+<status status="PASS" endtime="20170805 21:20:36.571" starttime="20170805 21:20:33.800"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Python</arg>
+</arguments>
+<status status="PASS" endtime="20170805 21:20:36.605" starttime="20170805 21:20:36.571"></status>
+</kw>
+<status status="PASS" endtime="20170805 21:20:36.606" starttime="20170805 21:20:33.800"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170805 21:20:39.697" starttime="20170805 21:20:36.606"></status>
+</kw>
+<doc>This is Python site test</doc>
+<tags>
+<tag>python</tag>
+</tags>
+<status status="PASS" endtime="20170805 21:20:39.697" critical="yes" starttime="20170805 21:20:30.389"></status>
+</test>
+<test id="s1-t2" name="Check if Robot web site is up and running">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170805 21:20:39.697" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170805 21:20:43.089" starttime="20170805 21:20:39.697"></status>
+</kw>
+<kw name="Test Robot site">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://www.robotframework.org</arg>
+</arguments>
+<msg timestamp="20170805 21:20:43.091" level="INFO">Opening url 'http://www.robotframework.org'</msg>
+<status status="PASS" endtime="20170805 21:20:53.516" starttime="20170805 21:20:43.091"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Robot Framework</arg>
+</arguments>
+<status status="PASS" endtime="20170805 21:20:53.545" starttime="20170805 21:20:53.516"></status>
+</kw>
+<status status="PASS" endtime="20170805 21:20:53.546" starttime="20170805 21:20:43.090"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170805 21:20:56.626" starttime="20170805 21:20:53.546"></status>
+</kw>
+<doc>This is Robot site test</doc>
+<tags>
+<tag>robot</tag>
+</tags>
+<status status="PASS" endtime="20170805 21:20:56.626" critical="yes" starttime="20170805 21:20:39.697"></status>
+</test>
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Finished to do something</arg>
+</arguments>
+<msg timestamp="20170805 21:20:56.626" level="INFO">Finished to do something</msg>
+<status status="PASS" endtime="20170805 21:20:56.626" starttime="20170805 21:20:56.626"></status>
+</kw>
+<doc>How to use KW example</doc>
+<status status="PASS" endtime="20170805 21:20:56.626" starttime="20170805 21:20:30.304"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">python</stat>
+<stat fail="0" pass="1">robot</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="UserKeywords" pass="2">UserKeywords</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

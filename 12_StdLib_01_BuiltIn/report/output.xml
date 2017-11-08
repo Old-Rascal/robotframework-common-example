@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170810 15:34:26.180" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\12_StdLib_01_BuiltIn\Tests\Example_4_BuiltIn.robot" id="s1" name="Example 4 BuiltIn">
+<test id="s1-t1" name="Test Case 1">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>This is the first test variable</arg>
+</arguments>
+<assign>
+<var>${var_1}</var>
+</assign>
+<msg timestamp="20170810 15:34:26.296" level="INFO">${var_1} = This is the first test variable</msg>
+<status status="PASS" endtime="20170810 15:34:26.296" starttime="20170810 15:34:26.296"></status>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${var_2}</arg>
+<arg>This is the second test variable</arg>
+</arguments>
+<msg timestamp="20170810 15:34:26.296" level="INFO">${var_2} = This is the second test variable</msg>
+<status status="PASS" endtime="20170810 15:34:26.296" starttime="20170810 15:34:26.296"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${suite_var}</arg>
+<arg>This is the suite variable</arg>
+</arguments>
+<msg timestamp="20170810 15:34:26.296" level="INFO">${suite_var} = This is the suite variable</msg>
+<status status="PASS" endtime="20170810 15:34:26.296" starttime="20170810 15:34:26.296"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${global_var}</arg>
+<arg>this is the global variable</arg>
+</arguments>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${global_var} = this is the global variable</msg>
+<status status="PASS" endtime="20170810 15:34:26.312" starttime="20170810 15:34:26.312"></status>
+</kw>
+<doc>Variable Scope &amp; Set Variables</doc>
+<status status="PASS" endtime="20170810 15:34:26.312" critical="yes" starttime="20170810 15:34:26.296"></status>
+</test>
+<test id="s1-t2" name="Test Case 2">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>${undeclared_var}</arg>
+</arguments>
+<status status="PASS" endtime="20170810 15:34:26.312" starttime="20170810 15:34:26.312"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>just something</arg>
+</arguments>
+<status status="PASS" endtime="20170810 15:34:26.312" starttime="20170810 15:34:26.312"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>${GLOBAL_VARIABLE}</arg>
+</arguments>
+<status status="PASS" endtime="20170810 15:34:26.312" starttime="20170810 15:34:26.312"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>something log to report</arg>
+</arguments>
+<msg timestamp="20170810 15:34:26.312" level="INFO">something log to report</msg>
+<status status="PASS" endtime="20170810 15:34:26.312" starttime="20170810 15:34:26.312"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>First line</arg>
+<arg>Second line</arg>
+<arg>Third line</arg>
+</arguments>
+<msg timestamp="20170810 15:34:26.312" level="INFO">First line</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">Second line</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">Third line</msg>
+<status status="PASS" endtime="20170810 15:34:26.312" starttime="20170810 15:34:26.312"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Checking if the test is going from the terminal</arg>
+</arguments>
+<status status="PASS" endtime="20170810 15:34:26.312" starttime="20170810 15:34:26.312"></status>
+</kw>
+<kw name="Log Variables" library="BuiltIn">
+<doc>Logs all variables in the current scope with given log level.</doc>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${/} = \</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${:} = ;</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${\n} = 
+</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${DEBUG_FILE} = NONE</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${EXECDIR} = D:\Resources\day_edu\robotframework\robotframework-example\12_StdLib_01_BuiltIn\Tests</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${False} = False</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${global_var} = this is the global variable</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${GLOBAL_VARIABLE} = This is a global variable</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${LOG_FILE} = D:\Resources\day_edu\robotframework\robotframework-example\12_StdLib_01_BuiltIn\report\log.html</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${LOG_LEVEL} = INFO</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${None} = None</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${null} = None</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${OUTPUT_DIR} = D:\Resources\day_edu\robotframework\robotframework-example\12_StdLib_01_BuiltIn\report</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${OUTPUT_FILE} = D:\Resources\day_edu\robotframework\robotframework-example\12_StdLib_01_BuiltIn\report\output.xml</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${PREV_TEST_MESSAGE} = </msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${PREV_TEST_NAME} = Test Case 1</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${PREV_TEST_STATUS} = PASS</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${REPORT_FILE} = D:\Resources\day_edu\robotframework\robotframework-example\12_StdLib_01_BuiltIn\report\report.html</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${SPACE} =  </msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${SUITE_DOCUMENTATION} = example for builtln</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">&amp;{SUITE_METADATA} = { }</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${SUITE_NAME} = Example 4 BuiltIn</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${SUITE_SOURCE} = D:\Resources\day_edu\robotframework\robotframework-example\12_StdLib_01_BuiltIn\Tests\Example_4_BuiltIn.robot</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${suite_var} = This is the suite variable</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${TEMPDIR} = c:\users\yushiyi\appdata\local\temp</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${TEST_DOCUMENTATION} = </msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${TEST_NAME} = Test Case 2</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">@{TEST_TAGS} = [ Builtin ]</msg>
+<msg timestamp="20170810 15:34:26.312" level="INFO">${True} = True</msg>
+<status status="PASS" endtime="20170810 15:34:26.312" starttime="20170810 15:34:26.312"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${suite_var}</arg>
+</arguments>
+<msg timestamp="20170810 15:34:26.312" level="INFO">This is the suite variable</msg>
+<status status="PASS" endtime="20170810 15:34:26.312" starttime="20170810 15:34:26.312"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${global_var}</arg>
+</arguments>
+<msg timestamp="20170810 15:34:26.312" level="INFO">this is the global variable</msg>
+<status status="PASS" endtime="20170810 15:34:26.312" starttime="20170810 15:34:26.312"></status>
+</kw>
+<tags>
+<tag>Builtin</tag>
+</tags>
+<status status="PASS" endtime="20170810 15:34:26.312" critical="yes" starttime="20170810 15:34:26.312"></status>
+</test>
+<test id="s1-t3" name="Test Case 3">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170810 15:34:26.327" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'</msg>
+<status status="PASS" endtime="20170810 15:34:37.136" starttime="20170810 15:34:26.327"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Wait until page contains</arg>
+<arg>Python on google</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Python on google</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170810 15:34:42.679" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170810 15:34:42.679" starttime="20170810 15:34:42.312"></status>
+</kw>
+<msg timestamp="20170810 15:34:42.681" level="FAIL">Text 'Python on google' did not appear in 5 seconds</msg>
+<status status="FAIL" endtime="20170810 15:34:42.681" starttime="20170810 15:34:37.142"></status>
+</kw>
+<status status="FAIL" endtime="20170810 15:34:42.681" starttime="20170810 15:34:37.141"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${suite_var}</arg>
+</arguments>
+<msg timestamp="20170810 15:34:42.682" level="INFO">This is the suite variable</msg>
+<status status="PASS" endtime="20170810 15:34:42.682" starttime="20170810 15:34:42.682"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${global_var}</arg>
+</arguments>
+<msg timestamp="20170810 15:34:42.683" level="INFO">this is the global variable</msg>
+<status status="PASS" endtime="20170810 15:34:42.683" starttime="20170810 15:34:42.683"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170810 15:34:45.822" starttime="20170810 15:34:42.683"></status>
+</kw>
+<doc>Continue on failuer of a test case
+This case will be fail</doc>
+<tags>
+<tag>Builtin</tag>
+</tags>
+<status status="FAIL" endtime="20170810 15:34:45.823" critical="yes" starttime="20170810 15:34:26.327">Text 'Python on google' did not appear in 5 seconds</status>
+</test>
+<test id="s1-t4" name="Test Case 4">
+<kw name="Repeat Keyword" library="BuiltIn">
+<doc>Executes the specified keyword multiple times.</doc>
+<arguments>
+<arg>3 times</arg>
+<arg>Say Something</arg>
+</arguments>
+<msg timestamp="20170810 15:34:45.826" level="INFO">Repeating keyword, round 1/3.</msg>
+<kw name="Say Something">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>something log to report....</arg>
+</arguments>
+<msg timestamp="20170810 15:34:45.827" level="INFO">something log to report....</msg>
+<status status="PASS" endtime="20170810 15:34:45.827" starttime="20170810 15:34:45.827"></status>
+</kw>
+<status status="PASS" endtime="20170810 15:34:45.827" starttime="20170810 15:34:45.826"></status>
+</kw>
+<msg timestamp="20170810 15:34:45.827" level="INFO">Repeating keyword, round 2/3.</msg>
+<kw name="Say Something">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>something log to report....</arg>
+</arguments>
+<msg timestamp="20170810 15:34:45.828" level="INFO">something log to report....</msg>
+<status status="PASS" endtime="20170810 15:34:45.828" starttime="20170810 15:34:45.827"></status>
+</kw>
+<status status="PASS" endtime="20170810 15:34:45.828" starttime="20170810 15:34:45.827"></status>
+</kw>
+<msg timestamp="20170810 15:34:45.828" level="INFO">Repeating keyword, round 3/3.</msg>
+<kw name="Say Something">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>something log to report....</arg>
+</arguments>
+<msg timestamp="20170810 15:34:45.828" level="INFO">something log to report....</msg>
+<status status="PASS" endtime="20170810 15:34:45.828" starttime="20170810 15:34:45.828"></status>
+</kw>
+<status status="PASS" endtime="20170810 15:34:45.828" starttime="20170810 15:34:45.828"></status>
+</kw>
+<status status="PASS" endtime="20170810 15:34:45.829" starttime="20170810 15:34:45.826"></status>
+</kw>
+<doc>repeat run keyword</doc>
+<status status="PASS" endtime="20170810 15:34:45.829" critical="yes" starttime="20170810 15:34:45.825"></status>
+</test>
+<doc>example for builtln</doc>
+<status status="FAIL" endtime="20170810 15:34:45.832" starttime="20170810 15:34:26.180"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="3">Critical Tests</stat>
+<stat fail="1" pass="3">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="1">Builtin</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Example 4 BuiltIn" pass="3">Example 4 BuiltIn</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

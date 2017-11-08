@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170805 20:38:42.521" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\02_TestSetupTeardown\Tests\TestSetupTeardown.robot" id="s1" name="TestSetupTeardown">
+<test id="s1-t1" name="Test Case 1">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170805 20:38:43.654" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170805 20:38:47.311" starttime="20170805 20:38:43.654"></status>
+</kw>
+<kw name="Check if Python web site is up and running">
+<tags>
+<tag>python</tag>
+</tags>
+<doc>This is Python site test</doc>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://www.python.org</arg>
+</arguments>
+<msg timestamp="20170805 20:38:47.312" level="INFO">Opening url 'https://www.python.org'</msg>
+<status status="PASS" endtime="20170805 20:39:26.777" starttime="20170805 20:38:47.312"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Python</arg>
+</arguments>
+<status status="PASS" endtime="20170805 20:39:26.809" starttime="20170805 20:39:26.777"></status>
+</kw>
+<status status="PASS" endtime="20170805 20:39:26.809" starttime="20170805 20:38:47.311"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170805 20:39:29.869" starttime="20170805 20:39:26.810"></status>
+</kw>
+<status status="PASS" endtime="20170805 20:39:29.869" critical="yes" starttime="20170805 20:38:43.654"></status>
+</test>
+<test id="s1-t2" name="Test Case 2">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170805 20:39:29.869" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170805 20:39:33.265" starttime="20170805 20:39:29.869"></status>
+</kw>
+<kw name="Check if Robot web site is up and running">
+<tags>
+<tag>robot</tag>
+</tags>
+<doc>This is Robot site test</doc>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://www.robotframework.org</arg>
+</arguments>
+<msg timestamp="20170805 20:39:33.266" level="INFO">Opening url 'http://www.robotframework.org'</msg>
+<status status="PASS" endtime="20170805 20:39:59.402" starttime="20170805 20:39:33.266"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Robot Framework</arg>
+</arguments>
+<status status="PASS" endtime="20170805 20:39:59.439" starttime="20170805 20:39:59.402"></status>
+</kw>
+<status status="PASS" endtime="20170805 20:39:59.440" starttime="20170805 20:39:33.265"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170805 20:40:02.565" starttime="20170805 20:39:59.440"></status>
+</kw>
+<status status="PASS" endtime="20170805 20:40:02.565" critical="yes" starttime="20170805 20:39:29.869"></status>
+</test>
+<doc>Test Setup &amp; Test Teardown example</doc>
+<status status="PASS" endtime="20170805 20:40:02.565" starttime="20170805 20:38:42.521"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TestSetupTeardown" pass="2">TestSetupTeardown</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

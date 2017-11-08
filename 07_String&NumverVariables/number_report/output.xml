@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170806 14:29:34.023" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\07_String&amp;NumverVariables\Tests\NumberVariables.robot" id="s1" name="NumberVariables">
+<test id="s1-t1" name="Test Case 1">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${NUM1}+${NUM2}</arg>
+</arguments>
+<assign>
+<var>${num_addition}</var>
+</assign>
+<msg timestamp="20170806 14:29:34.039" level="INFO">${num_addition} = 13</msg>
+<status status="PASS" endtime="20170806 14:29:34.039" starttime="20170806 14:29:34.039"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${num_addition}</arg>
+</arguments>
+<msg timestamp="20170806 14:29:34.039" level="INFO">13</msg>
+<status status="PASS" endtime="20170806 14:29:34.039" starttime="20170806 14:29:34.039"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${NUM1}-${NUM2}</arg>
+</arguments>
+<assign>
+<var>${num_subtraction}</var>
+</assign>
+<msg timestamp="20170806 14:29:34.039" level="INFO">${num_subtraction} = 7</msg>
+<status status="PASS" endtime="20170806 14:29:34.039" starttime="20170806 14:29:34.039"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${num_subtraction}</arg>
+</arguments>
+<msg timestamp="20170806 14:29:34.039" level="INFO">7</msg>
+<status status="PASS" endtime="20170806 14:29:34.039" starttime="20170806 14:29:34.039"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${NUM1}*${NUM2}</arg>
+</arguments>
+<assign>
+<var>${num_multiplication}</var>
+</assign>
+<msg timestamp="20170806 14:29:34.039" level="INFO">${num_multiplication} = 30</msg>
+<status status="PASS" endtime="20170806 14:29:34.039" starttime="20170806 14:29:34.039"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${num_multiplication}</arg>
+</arguments>
+<msg timestamp="20170806 14:29:34.039" level="INFO">30</msg>
+<status status="PASS" endtime="20170806 14:29:34.039" starttime="20170806 14:29:34.039"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${NUM1}/${NUM2}</arg>
+</arguments>
+<assign>
+<var>${num_division}</var>
+</assign>
+<msg timestamp="20170806 14:29:34.039" level="INFO">${num_division} = 3</msg>
+<status status="PASS" endtime="20170806 14:29:34.039" starttime="20170806 14:29:34.039"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${num_division}</arg>
+</arguments>
+<msg timestamp="20170806 14:29:34.039" level="INFO">3</msg>
+<status status="PASS" endtime="20170806 14:29:34.039" starttime="20170806 14:29:34.039"></status>
+</kw>
+<status status="PASS" endtime="20170806 14:29:34.039" critical="yes" starttime="20170806 14:29:34.039"></status>
+</test>
+<doc>Number variables example</doc>
+<status status="PASS" endtime="20170806 14:29:34.039" starttime="20170806 14:29:34.023"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="NumberVariables" pass="1">NumberVariables</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

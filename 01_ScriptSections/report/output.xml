@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170805 19:02:34.287" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\01_ScriptSections\Tests\ScriptSections.robot" id="s1" name="ScriptSections">
+<test id="s1-t1" name="Test Case 1">
+<kw name="Check if Python web site is up and running">
+<tags>
+<tag>python</tag>
+</tags>
+<doc>This is python site test</doc>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.python.org/</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170805 19:02:34.387" level="INFO">Opening browser 'chrome' to base url 'https://www.python.org/'</msg>
+<status status="PASS" endtime="20170805 19:02:39.903" starttime="20170805 19:02:34.387"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Python</arg>
+</arguments>
+<status status="PASS" endtime="20170805 19:02:39.940" starttime="20170805 19:02:39.903"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170805 19:02:43.029" starttime="20170805 19:02:39.940"></status>
+</kw>
+<status status="PASS" endtime="20170805 19:02:43.029" starttime="20170805 19:02:34.387"></status>
+</kw>
+<status status="PASS" endtime="20170805 19:02:43.029" critical="yes" starttime="20170805 19:02:34.387"></status>
+</test>
+<test id="s1-t2" name="Test Case 2">
+<kw name="Check if Robot web site is up and running">
+<tags>
+<tag>robot</tag>
+</tags>
+<doc>This is robot site test</doc>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://robotframework.org/</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170805 19:02:43.029" level="INFO">Opening browser 'chrome' to base url 'http://robotframework.org/'</msg>
+<status status="PASS" endtime="20170805 19:02:52.541" starttime="20170805 19:02:43.029"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Robot Framework</arg>
+</arguments>
+<status status="PASS" endtime="20170805 19:02:52.572" starttime="20170805 19:02:52.542"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170805 19:02:55.662" starttime="20170805 19:02:52.572"></status>
+</kw>
+<status status="PASS" endtime="20170805 19:02:55.662" starttime="20170805 19:02:43.029"></status>
+</kw>
+<status status="PASS" endtime="20170805 19:02:55.662" critical="yes" starttime="20170805 19:02:43.029"></status>
+</test>
+<test id="s1-t3" name="Test Case 3">
+<kw name="Check if GitHub Web Site is up and running">
+<tags>
+<tag>GitHub</tag>
+</tags>
+<doc>This is robot site test</doc>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://github.com/OlgaKuklina</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170805 19:02:55.662" level="INFO">Opening browser 'chrome' to base url 'https://github.com/OlgaKuklina'</msg>
+<status status="PASS" endtime="20170805 19:03:03.171" starttime="20170805 19:02:55.662"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Olga Kuklina</arg>
+</arguments>
+<status status="PASS" endtime="20170805 19:03:03.192" starttime="20170805 19:03:03.171"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170805 19:03:06.272" starttime="20170805 19:03:03.192"></status>
+</kw>
+<status status="PASS" endtime="20170805 19:03:06.272" starttime="20170805 19:02:55.662"></status>
+</kw>
+<status status="PASS" endtime="20170805 19:03:06.272" critical="yes" starttime="20170805 19:02:55.662"></status>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="PASS" endtime="20170805 19:03:06.272" starttime="20170805 19:02:34.287"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="ScriptSections" pass="3">ScriptSections</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

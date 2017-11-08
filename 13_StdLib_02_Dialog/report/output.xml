@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170810 16:03:17.075" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\13_StdLib_02_Dialog\Tests\Dialog.robot" id="s1" name="Dialog">
+<test id="s1-t1" name="Test Case 1">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170810 16:03:17.215" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170810 16:03:21.125" starttime="20170810 16:03:17.215"></status>
+</kw>
+<kw name="Check if Python web site is up and running">
+<tags>
+<tag>python</tag>
+</tags>
+<doc>This is Python site test</doc>
+<kw name="Get Selection From User" library="Dialogs">
+<doc>Pauses test execution and asks user to select a value.</doc>
+<arguments>
+<arg>Which browser?</arg>
+<arg>chrome</arg>
+<arg>ie</arg>
+</arguments>
+<assign>
+<var>${new_browser}</var>
+</assign>
+<msg timestamp="20170810 16:03:23.351" level="INFO">${new_browser} = chrome</msg>
+<status status="PASS" endtime="20170810 16:03:23.351" starttime="20170810 16:03:21.130"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${BROWSER}</arg>
+<arg>${new_browser}</arg>
+</arguments>
+<msg timestamp="20170810 16:03:23.352" level="INFO">${BROWSER} = chrome</msg>
+<status status="PASS" endtime="20170810 16:03:23.352" starttime="20170810 16:03:23.352"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://www.python.org</arg>
+</arguments>
+<msg timestamp="20170810 16:03:23.353" level="INFO">Opening url 'https://www.python.org'</msg>
+<status status="PASS" endtime="20170810 16:03:25.762" starttime="20170810 16:03:23.352"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Python</arg>
+</arguments>
+<status status="PASS" endtime="20170810 16:03:25.832" starttime="20170810 16:03:25.762"></status>
+</kw>
+<status status="PASS" endtime="20170810 16:03:25.833" starttime="20170810 16:03:21.129"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170810 16:03:29.013" starttime="20170810 16:03:25.834"></status>
+</kw>
+<status status="PASS" endtime="20170810 16:03:29.013" critical="yes" starttime="20170810 16:03:17.215"></status>
+</test>
+<test id="s1-t2" name="Test Case 2">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170810 16:03:29.013" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170810 16:03:32.940" starttime="20170810 16:03:29.013"></status>
+</kw>
+<kw name="Check if Robot web site is up and running">
+<tags>
+<tag>robot</tag>
+</tags>
+<doc>This is Robot site test</doc>
+<kw name="Execute Manual Step" library="Dialogs">
+<doc>Pauses test execution until user sets the keyword status.</doc>
+<arguments>
+<arg>Please wait me a moment !</arg>
+<arg>I had wait a moment !</arg>
+</arguments>
+<status status="PASS" endtime="20170810 16:03:36.321" starttime="20170810 16:03:32.944"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://www.robotframework.org</arg>
+</arguments>
+<msg timestamp="20170810 16:03:36.322" level="INFO">Opening url 'http://www.robotframework.org'</msg>
+<status status="PASS" endtime="20170810 16:04:52.514" starttime="20170810 16:03:36.322"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Robot Framework</arg>
+</arguments>
+<status status="PASS" endtime="20170810 16:04:52.549" starttime="20170810 16:04:52.515"></status>
+</kw>
+<kw name="Pause Execution" library="Dialogs">
+<doc>Pauses test execution until user clicks ``Ok`` button.</doc>
+<status status="PASS" endtime="20170810 16:04:58.314" starttime="20170810 16:04:52.549"></status>
+</kw>
+<status status="PASS" endtime="20170810 16:04:58.314" starttime="20170810 16:03:32.943"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170810 16:05:01.557" starttime="20170810 16:04:58.315"></status>
+</kw>
+<status status="PASS" endtime="20170810 16:05:01.557" critical="yes" starttime="20170810 16:03:29.013"></status>
+</test>
+<test id="s1-t3" name="Test Case 3">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170810 16:05:01.557" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170810 16:05:05.669" starttime="20170810 16:05:01.557"></status>
+</kw>
+<kw name="Find Keyword in Robot Framework User Guid">
+<tags>
+<tag>robotuser</tag>
+</tags>
+<doc>This is Robot User Guide test</doc>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html</arg>
+</arguments>
+<msg timestamp="20170810 16:05:05.678" level="INFO">Opening url 'http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html'</msg>
+<status status="PASS" endtime="20170810 16:05:13.026" starttime="20170810 16:05:05.677"></status>
+</kw>
+<kw name="Get Value From User" library="Dialogs">
+<doc>Pauses test execution and asks user to input a value.</doc>
+<arguments>
+<arg>What word must be on this page</arg>
+<arg>Robot</arg>
+</arguments>
+<assign>
+<var>${keyword}</var>
+</assign>
+<msg timestamp="20170810 16:05:16.802" level="INFO">${keyword} = Robot</msg>
+<status status="PASS" endtime="20170810 16:05:16.802" starttime="20170810 16:05:13.026"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<status status="PASS" endtime="20170810 16:05:16.960" starttime="20170810 16:05:16.802"></status>
+</kw>
+<status status="PASS" endtime="20170810 16:05:16.960" starttime="20170810 16:05:05.677"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170810 16:05:20.142" starttime="20170810 16:05:16.960"></status>
+</kw>
+<status status="PASS" endtime="20170810 16:05:20.142" critical="yes" starttime="20170810 16:05:01.557"></status>
+</test>
+<doc>Dialogs standard library</doc>
+<status status="PASS" endtime="20170810 16:05:20.142" starttime="20170810 16:03:17.091"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Dialog" pass="3">Dialog</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170813 14:30:27.413" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\15_CustomLib_02\Tests\CustomLib_02.robot" id="s1" name="CustomLib 02">
+<test id="s1-t1" name="CustomLib Test Case 1">
+<kw name="Hello World" library="CustomLib_02.CustomLib">
+<msg timestamp="20170813 14:30:27.446" level="INFO">Hello World</msg>
+<status status="PASS" endtime="20170813 14:30:27.446" starttime="20170813 14:30:27.446"></status>
+</kw>
+<kw name="Print My Name" library="CustomLib_02.CustomLib">
+<arguments>
+<arg>ELeven</arg>
+</arguments>
+<msg timestamp="20170813 14:30:27.446" level="INFO">My name is ELeven</msg>
+<status status="PASS" endtime="20170813 14:30:27.446" starttime="20170813 14:30:27.446"></status>
+</kw>
+<kw name="Account Info" library="CustomLib_02.CustomLib">
+<msg timestamp="20170813 14:30:27.446" level="INFO">this is account info username is admin and pwd is admin</msg>
+<status status="PASS" endtime="20170813 14:30:27.446" starttime="20170813 14:30:27.446"></status>
+</kw>
+<kw name="Account Info" library="CustomLib_02.CustomLib">
+<arguments>
+<arg>root</arg>
+<arg>root</arg>
+</arguments>
+<msg timestamp="20170813 14:30:27.446" level="INFO">this is account info username is root and pwd is root</msg>
+<status status="PASS" endtime="20170813 14:30:27.446" starttime="20170813 14:30:27.446"></status>
+</kw>
+<status status="PASS" endtime="20170813 14:30:27.446" critical="yes" starttime="20170813 14:30:27.446"></status>
+</test>
+<test id="s1-t2" name="CustomLib Test Case 2">
+<kw name="Multiplication Compute" library="CustomLib_02.MathLib">
+<assign>
+<var>${product}</var>
+</assign>
+<msg timestamp="20170813 14:30:27.461" level="INFO">MULTIPLICATION 15 + 15</msg>
+<msg timestamp="20170813 14:30:27.461" level="INFO">${product} = 225</msg>
+<status status="PASS" endtime="20170813 14:30:27.461" starttime="20170813 14:30:27.461"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${product}</arg>
+</arguments>
+<msg timestamp="20170813 14:30:27.461" level="INFO">225</msg>
+<status status="PASS" endtime="20170813 14:30:27.461" starttime="20170813 14:30:27.461"></status>
+</kw>
+<status status="PASS" endtime="20170813 14:30:27.461" critical="yes" starttime="20170813 14:30:27.461"></status>
+</test>
+<status status="PASS" endtime="20170813 14:30:27.461" starttime="20170813 14:30:27.430"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="CustomLib 02" pass="2">CustomLib 02</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170813 14:30:27.446" level="WARN">Imported library 'D:\Resources\day_edu\robotframework\robotframework-example\15_CustomLib_02\Library\CustomLib_02.py' contains no keywords.</msg>
+</errors>
+</robot>

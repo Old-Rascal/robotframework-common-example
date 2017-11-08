@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170813 14:39:05.388" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\15_CustomLib_04\Tests\CustomLib_04.robot" id="s1" name="CustomLib 04">
+<test id="s1-t1" name="My Custom Lib 1 Test">
+<kw name="My Keyword" library="CustomLib_04_01">
+<msg timestamp="20170813 14:39:05.419" level="INFO">My Custome Lib 1 My Keyword</msg>
+<status status="PASS" endtime="20170813 14:39:05.419" starttime="20170813 14:39:05.419"></status>
+</kw>
+<status status="PASS" endtime="20170813 14:39:05.419" critical="yes" starttime="20170813 14:39:05.419"></status>
+</test>
+<test id="s1-t2" name="My Custom Lib 2 Test">
+<kw name="My Keyword 1" library="CustomLib_04_02">
+<msg timestamp="20170813 14:39:05.419" level="INFO">My Keyword 1</msg>
+<status status="PASS" endtime="20170813 14:39:05.419" starttime="20170813 14:39:05.419"></status>
+</kw>
+<kw name="My Keyword 2" library="CustomLib_04_02">
+<msg timestamp="20170813 14:39:05.435" level="INFO">My Keyword 2</msg>
+<status status="PASS" endtime="20170813 14:39:05.435" starttime="20170813 14:39:05.435"></status>
+</kw>
+<status status="PASS" endtime="20170813 14:39:05.435" critical="yes" starttime="20170813 14:39:05.419"></status>
+</test>
+<status status="PASS" endtime="20170813 14:39:05.435" starttime="20170813 14:39:05.388"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="CustomLib 04" pass="2">CustomLib 04</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

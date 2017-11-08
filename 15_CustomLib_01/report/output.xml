@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170813 14:11:56.334" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\15_CustomLib_01\Tests\CustomLib_01.robot" id="s1" name="CustomLib 01">
+<test id="s1-t1" name="CustomLib Test Case 1">
+<kw name="Hello World" library="CustomLib_01">
+<msg timestamp="20170813 14:11:56.367" level="INFO">Hello World</msg>
+<status status="PASS" endtime="20170813 14:11:56.367" starttime="20170813 14:11:56.367"></status>
+</kw>
+<kw name="Print My Name" library="CustomLib_01">
+<arguments>
+<arg>ELeven</arg>
+</arguments>
+<msg timestamp="20170813 14:11:56.368" level="INFO">My name is ELeven</msg>
+<status status="PASS" endtime="20170813 14:11:56.368" starttime="20170813 14:11:56.368"></status>
+</kw>
+<kw name="Account Info" library="CustomLib_01">
+<msg timestamp="20170813 14:11:56.369" level="INFO">this is account info username is admin and pwd is admin</msg>
+<status status="PASS" endtime="20170813 14:11:56.369" starttime="20170813 14:11:56.369"></status>
+</kw>
+<kw name="Account Info" library="CustomLib_01">
+<arguments>
+<arg>root</arg>
+<arg>root</arg>
+</arguments>
+<msg timestamp="20170813 14:11:56.370" level="INFO">this is account info username is root and pwd is root</msg>
+<status status="PASS" endtime="20170813 14:11:56.370" starttime="20170813 14:11:56.370"></status>
+</kw>
+<status status="PASS" endtime="20170813 14:11:56.371" critical="yes" starttime="20170813 14:11:56.366"></status>
+</test>
+<doc>If the complex logic, the use of robots can not be resolved, you can use Python to deal with</doc>
+<status status="PASS" endtime="20170813 14:11:56.372" starttime="20170813 14:11:56.334"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="CustomLib 01" pass="1">CustomLib 01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

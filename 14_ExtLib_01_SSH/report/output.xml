@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170813 15:03:02.761" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\14_ExtLib_01_SSH\Tests\SSH.robot" id="s1" name="SSH">
+<test id="s1-t1" name="Execute Command on Remote Host">
+<kw type="setup" name="Open Connection and Log In">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${HOST}</arg>
+</arguments>
+<status status="PASS" endtime="20170813 15:03:02.893" starttime="20170813 15:03:02.893"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USER}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20170813 15:03:02.893" level="INFO">Logging into '10.0.0.6:22' as 'root'.</msg>
+<msg timestamp="20170813 15:03:04.195" level="INFO">Read output: Last login: Sun Aug 13 03:02:58 2017 from 10.0.0.3
+[root@localhost ~]#</msg>
+<status status="PASS" endtime="20170813 15:03:04.195" starttime="20170813 15:03:02.893"></status>
+</kw>
+<status status="PASS" endtime="20170813 15:03:04.195" starttime="20170813 15:03:02.893"></status>
+</kw>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes `command` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>cat</arg>
+<arg>anaconda-ks.cfg</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<msg timestamp="20170813 15:03:04.195" level="INFO">Executing command 'cat'.</msg>
+<status status="FAIL" endtime="20170813 15:04:50.179" starttime="20170813 15:03:04.195"></status>
+</kw>
+<kw type="teardown" name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20170813 15:04:50.230" starttime="20170813 15:04:50.181"></status>
+</kw>
+<status status="FAIL" endtime="20170813 15:04:50.231" critical="yes" starttime="20170813 15:03:02.893">Execution terminated by signal</status>
+</test>
+<doc>SSH to remote host and check for specific file content</doc>
+<status status="FAIL" endtime="20170813 15:04:50.234" starttime="20170813 15:03:02.777"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="SSH" pass="0">SSH</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

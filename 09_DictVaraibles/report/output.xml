@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170806 15:11:58.853" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\09_DictVaraibles\Tests\DictVaraibles.robot" id="s1" name="DictVaraibles">
+<test id="s1-t1" name="Test Case 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>&amp;{GLOBAL_USER}[name]</arg>
+</arguments>
+<msg timestamp="20170806 15:11:58.869" level="INFO">root</msg>
+<status status="PASS" endtime="20170806 15:11:58.869" starttime="20170806 15:11:58.869"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>&amp;{GLOBAL_USER}[password]</arg>
+</arguments>
+<msg timestamp="20170806 15:11:58.869" level="INFO">abc123</msg>
+<status status="PASS" endtime="20170806 15:11:58.869" starttime="20170806 15:11:58.869"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:11:58.869" critical="yes" starttime="20170806 15:11:58.869"></status>
+</test>
+<test id="s1-t2" name="Test Case 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${GLOBAL_USER.name}</arg>
+</arguments>
+<msg timestamp="20170806 15:11:58.884" level="INFO">root</msg>
+<status status="PASS" endtime="20170806 15:11:58.884" starttime="20170806 15:11:58.884"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${GLOBAL_USER.password}</arg>
+</arguments>
+<msg timestamp="20170806 15:11:58.884" level="INFO">abc123</msg>
+<status status="PASS" endtime="20170806 15:11:58.884" starttime="20170806 15:11:58.884"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:11:58.884" critical="yes" starttime="20170806 15:11:58.869"></status>
+</test>
+<test id="s1-t3" name="Test Case 3">
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<assign>
+<var>&amp;{new_dict}</var>
+</assign>
+<msg timestamp="20170806 15:11:58.884" level="INFO">&amp;{new_dict} = { }</msg>
+<status status="PASS" endtime="20170806 15:11:58.884" starttime="20170806 15:11:58.884"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${new_dict}</arg>
+<arg>language=python</arg>
+<arg>framework=robot</arg>
+</arguments>
+<status status="PASS" endtime="20170806 15:11:58.884" starttime="20170806 15:11:58.884"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${new_dict}</arg>
+</arguments>
+<msg timestamp="20170806 15:11:58.884" level="INFO">{u'framework': u'robot', u'language': u'python'}</msg>
+<status status="PASS" endtime="20170806 15:11:58.884" starttime="20170806 15:11:58.884"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:11:58.884" critical="yes" starttime="20170806 15:11:58.884"></status>
+</test>
+<doc>Dictionary variable example</doc>
+<status status="PASS" endtime="20170806 15:11:58.884" starttime="20170806 15:11:58.853"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="DictVaraibles" pass="3">DictVaraibles</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

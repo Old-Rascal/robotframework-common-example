@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170813 14:34:43.206" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\15_CustomLib_03\Tests\CustomLib_03_01.robot" id="s1" name="CustomLib 03 01">
+<test id="s1-t1" name="1 Testing the TEST LIB">
+<kw name="Test Count" library="CustomLib_03.TestLib">
+<msg timestamp="20170813 14:34:43.237" level="INFO">1</msg>
+<status status="PASS" endtime="20170813 14:34:43.237" starttime="20170813 14:34:43.237"></status>
+</kw>
+<kw name="Test Count" library="CustomLib_03.TestLib">
+<msg timestamp="20170813 14:34:43.237" level="INFO">2</msg>
+<status status="PASS" endtime="20170813 14:34:43.237" starttime="20170813 14:34:43.237"></status>
+</kw>
+<status status="PASS" endtime="20170813 14:34:43.237" critical="yes" starttime="20170813 14:34:43.237"></status>
+</test>
+<test id="s1-t2" name="2 Testing the TEST LIB">
+<kw name="Test Count" library="CustomLib_03.TestLib">
+<msg timestamp="20170813 14:34:43.253" level="INFO">1</msg>
+<status status="PASS" endtime="20170813 14:34:43.253" starttime="20170813 14:34:43.253"></status>
+</kw>
+<kw name="Test Count" library="CustomLib_03.TestLib">
+<msg timestamp="20170813 14:34:43.253" level="INFO">2</msg>
+<status status="PASS" endtime="20170813 14:34:43.253" starttime="20170813 14:34:43.253"></status>
+</kw>
+<kw name="Clear Test Counter" library="CustomLib_03.TestLib">
+<status status="PASS" endtime="20170813 14:34:43.253" starttime="20170813 14:34:43.253"></status>
+</kw>
+<kw name="Test Count" library="CustomLib_03.TestLib">
+<msg timestamp="20170813 14:34:43.253" level="INFO">1</msg>
+<status status="PASS" endtime="20170813 14:34:43.253" starttime="20170813 14:34:43.253"></status>
+</kw>
+<status status="PASS" endtime="20170813 14:34:43.253" critical="yes" starttime="20170813 14:34:43.253"></status>
+</test>
+<test id="s1-t3" name="3 Testing the SUIT LIB">
+<kw name="Suit Count" library="CustomLib_03.SuitLib">
+<msg timestamp="20170813 14:34:43.253" level="INFO">1</msg>
+<status status="PASS" endtime="20170813 14:34:43.253" starttime="20170813 14:34:43.253"></status>
+</kw>
+<kw name="Suit Count" library="CustomLib_03.SuitLib">
+<msg timestamp="20170813 14:34:43.253" level="INFO">2</msg>
+<status status="PASS" endtime="20170813 14:34:43.253" starttime="20170813 14:34:43.253"></status>
+</kw>
+<status status="PASS" endtime="20170813 14:34:43.253" critical="yes" starttime="20170813 14:34:43.253"></status>
+</test>
+<test id="s1-t4" name="4 Testing the SUIT LIB">
+<kw name="Suit Count" library="CustomLib_03.SuitLib">
+<msg timestamp="20170813 14:34:43.253" level="INFO">3</msg>
+<status status="PASS" endtime="20170813 14:34:43.253" starttime="20170813 14:34:43.253"></status>
+</kw>
+<kw name="Suit Count" library="CustomLib_03.SuitLib">
+<msg timestamp="20170813 14:34:43.253" level="INFO">4</msg>
+<status status="PASS" endtime="20170813 14:34:43.253" starttime="20170813 14:34:43.253"></status>
+</kw>
+<kw name="Clear Suit Counter" library="CustomLib_03.SuitLib">
+<status status="PASS" endtime="20170813 14:34:43.253" starttime="20170813 14:34:43.253"></status>
+</kw>
+<kw name="Suit Count" library="CustomLib_03.SuitLib">
+<msg timestamp="20170813 14:34:43.253" level="INFO">1</msg>
+<status status="PASS" endtime="20170813 14:34:43.253" starttime="20170813 14:34:43.253"></status>
+</kw>
+<status status="PASS" endtime="20170813 14:34:43.253" critical="yes" starttime="20170813 14:34:43.253"></status>
+</test>
+<test id="s1-t5" name="5 Testing the GLOBAL LIB">
+<kw name="Global Count" library="CustomLib_03.GlobalLib">
+<msg timestamp="20170813 14:34:43.253" level="INFO">1</msg>
+<status status="PASS" endtime="20170813 14:34:43.253" starttime="20170813 14:34:43.253"></status>
+</kw>
+<kw name="Global Count" library="CustomLib_03.GlobalLib">
+<msg timestamp="20170813 14:34:43.253" level="INFO">2</msg>
+<status status="PASS" endtime="20170813 14:34:43.253" starttime="20170813 14:34:43.253"></status>
+</kw>
+<status status="PASS" endtime="20170813 14:34:43.253" critical="yes" starttime="20170813 14:34:43.253"></status>
+</test>
+<test id="s1-t6" name="6 Testing the GLOBAL LIB">
+<kw name="Global Count" library="CustomLib_03.GlobalLib">
+<msg timestamp="20170813 14:34:43.268" level="INFO">3</msg>
+<status status="PASS" endtime="20170813 14:34:43.268" starttime="20170813 14:34:43.268"></status>
+</kw>
+<kw name="Global Count" library="CustomLib_03.GlobalLib">
+<msg timestamp="20170813 14:34:43.268" level="INFO">4</msg>
+<status status="PASS" endtime="20170813 14:34:43.268" starttime="20170813 14:34:43.268"></status>
+</kw>
+<kw name="Clear Global Counter" library="CustomLib_03.GlobalLib">
+<status status="PASS" endtime="20170813 14:34:43.268" starttime="20170813 14:34:43.268"></status>
+</kw>
+<kw name="Global Count" library="CustomLib_03.GlobalLib">
+<msg timestamp="20170813 14:34:43.268" level="INFO">1</msg>
+<status status="PASS" endtime="20170813 14:34:43.268" starttime="20170813 14:34:43.268"></status>
+</kw>
+<status status="PASS" endtime="20170813 14:34:43.268" critical="yes" starttime="20170813 14:34:43.268"></status>
+</test>
+<status status="PASS" endtime="20170813 14:34:43.268" starttime="20170813 14:34:43.206"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="6">Critical Tests</stat>
+<stat fail="0" pass="6">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="CustomLib 03 01" pass="6">CustomLib 03 01</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170813 14:34:43.237" level="WARN">Imported library 'D:\Resources\day_edu\robotframework\robotframework-example\15_CustomLib_03\Library\CustomLib_03.py' contains no keywords.</msg>
+</errors>
+</robot>

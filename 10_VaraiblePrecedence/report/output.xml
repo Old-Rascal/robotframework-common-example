@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170806 15:13:49.896" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\10_VaraiblePrecedence\Tests\VaraiblePrecedence.robot" id="s1" name="VaraiblePrecedence">
+<test id="s1-t1" name="Variable Precedence Testing">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${THE_VARIABLE}</arg>
+</arguments>
+<msg timestamp="20170806 15:13:49.927" level="INFO">I am Script Global</msg>
+<status status="PASS" endtime="20170806 15:13:49.927" starttime="20170806 15:13:49.927"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>I am test case</arg>
+</arguments>
+<assign>
+<var>${THE_VARIABLE}</var>
+</assign>
+<msg timestamp="20170806 15:13:49.928" level="INFO">${THE_VARIABLE} = I am test case</msg>
+<status status="PASS" endtime="20170806 15:13:49.928" starttime="20170806 15:13:49.928"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${THE_VARIABLE}</arg>
+</arguments>
+<msg timestamp="20170806 15:13:49.929" level="INFO">I am test case</msg>
+<status status="PASS" endtime="20170806 15:13:49.929" starttime="20170806 15:13:49.928"></status>
+</kw>
+<kw name="Keyword testing">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>I am keyword</arg>
+</arguments>
+<assign>
+<var>${THE_VARIABLE}</var>
+</assign>
+<msg timestamp="20170806 15:13:49.930" level="INFO">${THE_VARIABLE} = I am keyword</msg>
+<status status="PASS" endtime="20170806 15:13:49.930" starttime="20170806 15:13:49.930"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${THE_VARIABLE}</arg>
+</arguments>
+<msg timestamp="20170806 15:13:49.931" level="INFO">I am keyword</msg>
+<status status="PASS" endtime="20170806 15:13:49.931" starttime="20170806 15:13:49.930"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:13:49.931" starttime="20170806 15:13:49.930"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:13:49.931" critical="yes" starttime="20170806 15:13:49.912"></status>
+</test>
+<status status="PASS" endtime="20170806 15:13:49.932" starttime="20170806 15:13:49.896"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="VaraiblePrecedence" pass="1">VaraiblePrecedence</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

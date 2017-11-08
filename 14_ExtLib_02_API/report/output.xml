@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170810 16:30:09.637" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\14_ExtLib_02_API\Tests\API.robot" id="s1" name="API">
+<test id="s1-t1" name="Check Github Username">
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>${GITHUB_SESSION}</arg>
+<arg>https://api.github.com</arg>
+</arguments>
+<msg timestamp="20170810 16:30:12.427" level="INFO">Creating Session using : alias=, url=https://api.github.com, headers={},                     cookies=None, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" endtime="20170810 16:30:12.427" starttime="20170810 16:30:12.427"></status>
+</kw>
+<kw name="Get Request" library="RequestsLibrary">
+<doc>Send a GET request on the session object found using the</doc>
+<arguments>
+<arg>${GITHUB_SESSION}</arg>
+<arg>users/defunkt</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20170810 16:30:13.927" level="INFO">Get Request using : alias=, uri=users/defunkt, headers=None json=None</msg>
+<msg timestamp="20170810 16:30:13.927" level="INFO">C:\Users\YuShiYi\AppData\Roaming\Python\Python27\site-packages\urllib3\connectionpool.py:858: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)</msg>
+<msg timestamp="20170810 16:30:13.927" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20170810 16:30:13.927" starttime="20170810 16:30:12.427"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+</arguments>
+<msg timestamp="20170810 16:30:13.927" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170810 16:30:13.927" starttime="20170810 16:30:13.927"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${response.json()}</arg>
+</arguments>
+<assign>
+<var>${json}</var>
+</assign>
+<msg timestamp="20170810 16:30:13.927" level="INFO">${json} = {u'public_repos': 107, u'site_admin': True, u'subscriptions_url': u'https://api.github.com/users/defunkt/subscriptions', u'gravatar_id': u'', u'hireable': True, u'id': 2, u'followers_url': u'https://a...</msg>
+<status status="PASS" endtime="20170810 16:30:13.927" starttime="20170810 16:30:13.927"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${json['login']}</arg>
+<arg>defunkt</arg>
+</arguments>
+<status status="PASS" endtime="20170810 16:30:13.927" starttime="20170810 16:30:13.927"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${json}</arg>
+</arguments>
+<msg timestamp="20170810 16:30:13.927" level="INFO">{u'public_repos': 107, u'site_admin': True, u'subscriptions_url': u'https://api.github.com/users/defunkt/subscriptions', u'gravatar_id': u'', u'hireable': True, u'id': 2, u'followers_url': u'https://api.github.com/users/defunkt/followers', u'following_url': u'https://api.github.com/users/defunkt/following{/other_user}', u'blog': u'http://chriswanstrath.com/', u'followers': 16336, u'location': u'San Francisco', u'type': u'User', u'email': None, u'bio': u'\U0001f354 ', u'gists_url': u'https://api.github.com/users/defunkt/gists{/gist_id}', u'company': u'@github ', u'events_url': u'https://api.github.com/users/defunkt/events{/privacy}', u'html_url': u'https://github.com/defunkt', u'updated_at': u'2017-06-28T04:13:33Z', u'received_events_url': u'https://api.github.com/users/defunkt/received_events', u'starred_url': u'https://api.github.com/users/defunkt/starred{/owner}{/repo}', u'public_gists': 273, u'name': u'Chris Wanstrath', u'organizations_url': u'https://api.github.com/users/defunkt/orgs', u'url': u'https://api.github.com/users/defunkt', u'created_at': u'2007-10-20T05:24:19Z', u'avatar_url': u'https://avatars0.githubusercontent.com/u/2?v=4', u'repos_url': u'https://api.github.com/users/defunkt/repos', u'following': 208, u'login': u'defunkt'}</msg>
+<status status="PASS" endtime="20170810 16:30:13.927" starttime="20170810 16:30:13.927"></status>
+</kw>
+<status status="PASS" endtime="20170810 16:30:13.927" critical="yes" starttime="20170810 16:30:12.427"></status>
+</test>
+<test id="s1-t2" name="Display Emoji">
+<kw name="Get Request" library="RequestsLibrary">
+<doc>Send a GET request on the session object found using the</doc>
+<arguments>
+<arg>${GITHUB_SESSION}</arg>
+<arg>emojis</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20170810 16:30:14.713" level="INFO">Get Request using : alias=, uri=emojis, headers=None json=None</msg>
+<msg timestamp="20170810 16:30:14.713" level="INFO">C:\Users\YuShiYi\AppData\Roaming\Python\Python27\site-packages\urllib3\connectionpool.py:858: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)</msg>
+<msg timestamp="20170810 16:30:14.713" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20170810 16:30:14.713" starttime="20170810 16:30:13.927"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+</arguments>
+<msg timestamp="20170810 16:30:14.713" level="INFO">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20170810 16:30:14.713" starttime="20170810 16:30:14.713"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${response.json()}</arg>
+</arguments>
+<assign>
+<var>${json}</var>
+</assign>
+<msg timestamp="20170810 16:30:14.728" level="INFO">${json} = {u'factory': u'https://assets-cdn.github.com/images/icons/emoji/unicode/1f3ed.png?v7', u'four': u'https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png?v7', u'cyprus': u'https://asset...</msg>
+<status status="PASS" endtime="20170810 16:30:14.728" starttime="20170810 16:30:14.713"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${json['alarm_clock']}</arg>
+</arguments>
+<assign>
+<var>${emoji_url}</var>
+</assign>
+<msg timestamp="20170810 16:30:14.728" level="INFO">${emoji_url} = https://assets-cdn.github.com/images/icons/emoji/unicode/23f0.png?v7</msg>
+<status status="PASS" endtime="20170810 16:30:14.728" starttime="20170810 16:30:14.728"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${emoji_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170810 16:30:14.728" level="INFO">Opening browser 'chrome' to base url 'https://assets-cdn.github.com/images/icons/emoji/unicode/23f0.png?v7'</msg>
+<status status="PASS" endtime="20170810 16:30:22.288" starttime="20170810 16:30:14.728"></status>
+</kw>
+<status status="PASS" endtime="20170810 16:30:22.293" critical="yes" starttime="20170810 16:30:13.927"></status>
+</test>
+<kw type="teardown" name="Delete All Sessions" library="RequestsLibrary">
+<doc>Removes all the session objects</doc>
+<msg timestamp="20170810 16:30:22.297" level="INFO">Delete All Sessions</msg>
+<status status="PASS" endtime="20170810 16:30:22.297" starttime="20170810 16:30:22.296"></status>
+</kw>
+<status status="PASS" endtime="20170810 16:30:22.297" starttime="20170810 16:30:09.637"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="API" pass="2">API</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

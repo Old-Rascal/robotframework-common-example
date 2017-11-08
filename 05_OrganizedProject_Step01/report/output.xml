@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170809 23:26:38.090" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\05_OrganizedProject_Step01\Tests\Amazon.robot" id="s1" name="Amazon">
+<test id="s1-t1" name="User must login befor check out">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170809 23:26:38.197" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170809 23:26:41.662" starttime="20170809 23:26:38.197"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://www.amazon.com</arg>
+</arguments>
+<msg timestamp="20170809 23:26:41.663" level="INFO">Opening url 'https://www.amazon.com'</msg>
+<status status="PASS" endtime="20170809 23:26:46.021" starttime="20170809 23:26:41.663"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Try Prime</arg>
+</arguments>
+<status status="PASS" endtime="20170809 23:26:46.055" starttime="20170809 23:26:46.023"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=twotabsearchtextbox</arg>
+<arg>${PRODUCT_NAME}</arg>
+</arguments>
+<msg timestamp="20170809 23:26:46.056" level="INFO">Typing text 'Python' into text field 'id=twotabsearchtextbox'</msg>
+<status status="PASS" endtime="20170809 23:26:46.209" starttime="20170809 23:26:46.055"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="nav-search"]/form/div[2]/div/input</arg>
+</arguments>
+<msg timestamp="20170809 23:26:46.210" level="INFO">Clicking button 'xpath=//*[@id="nav-search"]/form/div[2]/div/input'.</msg>
+<status status="PASS" endtime="20170809 23:26:50.314" starttime="20170809 23:26:46.209"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>results for "${PRODUCT_NAME}"</arg>
+</arguments>
+<status status="PASS" endtime="20170809 23:26:50.347" starttime="20170809 23:26:50.314"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>css=#result_0 a.s-access-detail-page</arg>
+</arguments>
+<msg timestamp="20170809 23:26:50.348" level="INFO">Clicking link 'css=#result_0 a.s-access-detail-page'.</msg>
+<status status="PASS" endtime="20170809 23:26:58.988" starttime="20170809 23:26:50.348"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Back to search results for "${PRODUCT_NAME}"</arg>
+</arguments>
+<status status="PASS" endtime="20170809 23:26:59.027" starttime="20170809 23:26:58.989"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=add-to-cart-button</arg>
+</arguments>
+<msg timestamp="20170809 23:26:59.028" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<status status="PASS" endtime="20170809 23:27:00.889" starttime="20170809 23:26:59.027"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Cart subtotal (1 item)</arg>
+</arguments>
+<status status="PASS" endtime="20170809 23:27:00.919" starttime="20170809 23:27:00.890"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>css=#hlb-ptc-btn-native</arg>
+</arguments>
+<msg timestamp="20170809 23:27:00.920" level="INFO">Clicking link 'css=#hlb-ptc-btn-native'.</msg>
+<status status="PASS" endtime="20170809 23:27:02.356" starttime="20170809 23:27:00.920"></status>
+</kw>
+<kw name="Page Should Contain Button" library="Selenium2Library">
+<doc>Verifies button identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>id=signInSubmit</arg>
+</arguments>
+<msg timestamp="20170809 23:27:02.384" level="INFO">Current page contains input 'id=signInSubmit'.</msg>
+<status status="PASS" endtime="20170809 23:27:02.384" starttime="20170809 23:27:02.357"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
+<arguments>
+<arg>id=createAccountSubmit</arg>
+<arg>Create your Amazon account</arg>
+</arguments>
+<msg timestamp="20170809 23:27:02.385" level="INFO">Verifying element 'id=createAccountSubmit' contains exactly text 'Create your Amazon account'.</msg>
+<status status="PASS" endtime="20170809 23:27:02.425" starttime="20170809 23:27:02.385"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170809 23:27:05.594" starttime="20170809 23:27:02.425"></status>
+</kw>
+<doc>Some basic operation checking</doc>
+<tags>
+<tag>amazon</tag>
+</tags>
+<status status="PASS" endtime="20170809 23:27:05.595" critical="yes" starttime="20170809 23:26:38.196"></status>
+</test>
+<doc>Testing amazon.com web site</doc>
+<status status="PASS" endtime="20170809 23:27:05.598" starttime="20170809 23:26:38.094"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">amazon</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Amazon" pass="1">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

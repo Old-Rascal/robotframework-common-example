@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170809 22:54:17.674" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\11_KeywordArgs\Tests\KeywordArgs.robot" id="s1" name="KeywordArgs">
+<test id="s1-t1" name="Passing Scalar Variables">
+<kw name="Begin Web Test With Scalar">
+<arguments>
+<arg>https://www.python.org</arg>
+<arg>chrome</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20170809 22:54:17.774" level="INFO">Opening browser 'chrome' to base url 'https://www.python.org'</msg>
+<status status="PASS" endtime="20170809 22:54:23.759" starttime="20170809 22:54:17.774"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170809 22:54:26.860" starttime="20170809 22:54:23.759"></status>
+</kw>
+<status status="PASS" endtime="20170809 22:54:26.860" starttime="20170809 22:54:17.774"></status>
+</kw>
+<status status="PASS" endtime="20170809 22:54:26.860" critical="yes" starttime="20170809 22:54:17.774"></status>
+</test>
+<test id="s1-t2" name="Passing List Variables">
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>https://www.python.org</arg>
+<arg>chrome</arg>
+</arguments>
+<assign>
+<var>@{list_url_browser}</var>
+</assign>
+<msg timestamp="20170809 22:54:26.860" level="INFO">@{list_url_browser} = [ https://www.python.org | chrome ]</msg>
+<status status="PASS" endtime="20170809 22:54:26.860" starttime="20170809 22:54:26.860"></status>
+</kw>
+<kw name="Begin Web Test With List">
+<arguments>
+<arg>@{list_url_browser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>@{url_browser_list}[0]</arg>
+<arg>@{url_browser_list}[1]</arg>
+</arguments>
+<msg timestamp="20170809 22:54:26.860" level="INFO">Opening browser 'chrome' to base url 'https://www.python.org'</msg>
+<status status="PASS" endtime="20170809 22:54:32.456" starttime="20170809 22:54:26.860"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170809 22:54:35.574" starttime="20170809 22:54:32.456"></status>
+</kw>
+<status status="PASS" endtime="20170809 22:54:35.574" starttime="20170809 22:54:26.860"></status>
+</kw>
+<status status="PASS" endtime="20170809 22:54:35.575" critical="yes" starttime="20170809 22:54:26.860"></status>
+</test>
+<test id="s1-t3" name="Passing Dict Variables">
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>url=https://www.python.org</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<assign>
+<var>&amp;{dict_url_browser}</var>
+</assign>
+<msg timestamp="20170809 22:54:35.580" level="INFO">&amp;{dict_url_browser} = { url=https://www.python.org | browser=chrome }</msg>
+<status status="PASS" endtime="20170809 22:54:35.580" starttime="20170809 22:54:35.579"></status>
+</kw>
+<kw name="Begin Web Test With Dict">
+<arguments>
+<arg>&amp;{dict_url_browser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>&amp;{url_browser_dict}[url]</arg>
+<arg>&amp;{url_browser_dict}[browser]</arg>
+</arguments>
+<msg timestamp="20170809 22:54:35.582" level="INFO">Opening browser 'chrome' to base url 'https://www.python.org'</msg>
+<status status="PASS" endtime="20170809 22:54:41.026" starttime="20170809 22:54:35.581"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170809 22:54:44.130" starttime="20170809 22:54:41.026"></status>
+</kw>
+<status status="PASS" endtime="20170809 22:54:44.130" starttime="20170809 22:54:35.581"></status>
+</kw>
+<status status="PASS" endtime="20170809 22:54:44.130" critical="yes" starttime="20170809 22:54:35.579"></status>
+</test>
+<doc>Passing Variables to user defined Keywords</doc>
+<status status="PASS" endtime="20170809 22:54:44.130" starttime="20170809 22:54:17.674"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="KeywordArgs" pass="3">KeywordArgs</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

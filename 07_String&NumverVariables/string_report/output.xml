@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170806 14:23:04.065" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\07_String&amp;NumverVariables\Tests\StringVariables.robot" id="s1" name="StringVariables">
+<test id="s1-t1" name="Test Case 1">
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${EMAIL_ADDRESS}</arg>
+</arguments>
+<assign>
+<var>${str_length}</var>
+</assign>
+<msg timestamp="20170806 14:23:04.093" level="INFO">Length is 17</msg>
+<msg timestamp="20170806 14:23:04.093" level="INFO">${str_length} = 17</msg>
+<status status="PASS" endtime="20170806 14:23:04.093" starttime="20170806 14:23:04.093"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${str_length}</arg>
+</arguments>
+<msg timestamp="20170806 14:23:04.094" level="INFO">17</msg>
+<status status="PASS" endtime="20170806 14:23:04.094" starttime="20170806 14:23:04.094"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${EMAIL_ADDRESS}</arg>
+<arg>@</arg>
+</arguments>
+<assign>
+<var>@{splite_str}</var>
+</assign>
+<msg timestamp="20170806 14:23:04.095" level="INFO">@{splite_str} = [ example | gmail.com ]</msg>
+<status status="PASS" endtime="20170806 14:23:04.095" starttime="20170806 14:23:04.095"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${splite_str}</arg>
+</arguments>
+<msg timestamp="20170806 14:23:04.096" level="INFO">[u'example', u'gmail.com']</msg>
+<status status="PASS" endtime="20170806 14:23:04.096" starttime="20170806 14:23:04.095"></status>
+</kw>
+<kw name="Get Substring" library="String">
+<doc>Returns a substring from ``start`` index to ``end`` index.</doc>
+<arguments>
+<arg>${EMAIL_ADDRESS}</arg>
+<arg>0</arg>
+<arg>7</arg>
+</arguments>
+<assign>
+<var>${sub_str}</var>
+</assign>
+<msg timestamp="20170806 14:23:04.096" level="INFO">${sub_str} = example</msg>
+<status status="PASS" endtime="20170806 14:23:04.096" starttime="20170806 14:23:04.096"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${sub_str}</arg>
+</arguments>
+<msg timestamp="20170806 14:23:04.097" level="INFO">example</msg>
+<status status="PASS" endtime="20170806 14:23:04.097" starttime="20170806 14:23:04.096"></status>
+</kw>
+<status status="PASS" endtime="20170806 14:23:04.097" critical="yes" starttime="20170806 14:23:04.092"></status>
+</test>
+<doc>String variables example</doc>
+<status status="PASS" endtime="20170806 14:23:04.098" starttime="20170806 14:23:04.069"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="StringVariables" pass="1">StringVariables</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

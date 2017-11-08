@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170806 15:04:03.482" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\Resources\day_edu\robotframework\robotframework-example\08_ListVariables\Tests\ListVariables.robot" id="s1" name="ListVariables">
+<test id="s1-t1" name="Test Case 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{GLOBAL_LIST}[0]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.514" level="INFO">I</msg>
+<status status="PASS" endtime="20170806 15:04:03.514" starttime="20170806 15:04:03.514"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{GLOBAL_LIST}[1]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.514" level="INFO">am</msg>
+<status status="PASS" endtime="20170806 15:04:03.514" starttime="20170806 15:04:03.514"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{GLOBAL_LIST}[2]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.514" level="INFO">Eleven</msg>
+<status status="PASS" endtime="20170806 15:04:03.514" starttime="20170806 15:04:03.514"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:04:03.514" critical="yes" starttime="20170806 15:04:03.514"></status>
+</test>
+<test id="s1-t2" name="Test Case 2">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>This</arg>
+<arg>is</arg>
+<arg>a</arg>
+<arg>new</arg>
+<arg>list</arg>
+</arguments>
+<assign>
+<var>@{new_list}</var>
+</assign>
+<msg timestamp="20170806 15:04:03.529" level="INFO">@{new_list} = [ This | is | a | new | list ]</msg>
+<status status="PASS" endtime="20170806 15:04:03.529" starttime="20170806 15:04:03.529"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{new_list}[0]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.530" level="INFO">This</msg>
+<status status="PASS" endtime="20170806 15:04:03.530" starttime="20170806 15:04:03.530"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{new_list}[1]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.530" level="INFO">is</msg>
+<status status="PASS" endtime="20170806 15:04:03.530" starttime="20170806 15:04:03.530"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{new_list}[2]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.531" level="INFO">a</msg>
+<status status="PASS" endtime="20170806 15:04:03.531" starttime="20170806 15:04:03.530"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{new_list}[3]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.531" level="INFO">new</msg>
+<status status="PASS" endtime="20170806 15:04:03.531" starttime="20170806 15:04:03.531"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{new_list}[4]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.531" level="INFO">list</msg>
+<status status="PASS" endtime="20170806 15:04:03.531" starttime="20170806 15:04:03.531"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:04:03.532" critical="yes" starttime="20170806 15:04:03.514"></status>
+</test>
+<test id="s1-t3" name="Test Case 3">
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>@{created_new_list}</var>
+</assign>
+<msg timestamp="20170806 15:04:03.533" level="INFO">@{created_new_list} = [ ]</msg>
+<status status="PASS" endtime="20170806 15:04:03.533" starttime="20170806 15:04:03.532"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${created_new_list}</arg>
+<arg>My</arg>
+<arg>Name</arg>
+<arg>is</arg>
+<arg>Eleven</arg>
+</arguments>
+<status status="PASS" endtime="20170806 15:04:03.533" starttime="20170806 15:04:03.533"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{created_new_list}[0]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.534" level="INFO">My</msg>
+<status status="PASS" endtime="20170806 15:04:03.534" starttime="20170806 15:04:03.533"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{created_new_list}[1]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.534" level="INFO">Name</msg>
+<status status="PASS" endtime="20170806 15:04:03.534" starttime="20170806 15:04:03.534"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{created_new_list}[2]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.534" level="INFO">is</msg>
+<status status="PASS" endtime="20170806 15:04:03.534" starttime="20170806 15:04:03.534"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{created_new_list}[3]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.535" level="INFO">Eleven</msg>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:04:03.535" critical="yes" starttime="20170806 15:04:03.532"></status>
+</test>
+<test id="s1-t4" name="Test Case 4">
+<kw type="for" name="${item} IN [ @{GLOBAL_LIST} ]">
+<kw type="foritem" name="${item} = I">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${item}</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.535" level="INFO">I</msg>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<kw type="foritem" name="${item} = am">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${item}</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.535" level="INFO">am</msg>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<kw type="foritem" name="${item} = Eleven">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${item}</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.535" level="INFO">Eleven</msg>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<doc>List loop with not index</doc>
+<status status="PASS" endtime="20170806 15:04:03.535" critical="yes" starttime="20170806 15:04:03.535"></status>
+</test>
+<test id="s1-t5" name="Test Case 5">
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${GLOBAL_LIST}</arg>
+</arguments>
+<assign>
+<var>${list_length}</var>
+</assign>
+<msg timestamp="20170806 15:04:03.535" level="INFO">Length is 3</msg>
+<msg timestamp="20170806 15:04:03.535" level="INFO">${list_length} = 3</msg>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<kw type="for" name="${index} IN RANGE [ 0 | ${list_length} ]">
+<kw type="foritem" name="${index} = 0">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{GLOBAL_LIST}[${index}]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.535" level="INFO">I</msg>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<kw type="foritem" name="${index} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{GLOBAL_LIST}[${index}]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.535" level="INFO">am</msg>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<kw type="foritem" name="${index} = 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{GLOBAL_LIST}[${index}]</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.535" level="INFO">Eleven</msg>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<doc>List loop with index</doc>
+<status status="PASS" endtime="20170806 15:04:03.535" critical="yes" starttime="20170806 15:04:03.535"></status>
+</test>
+<test id="s1-t6" name="Dynamically Change Variable">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${GLOBAL_SCALAR}</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.535" level="INFO">The global scalar</msg>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>now i changed the value</arg>
+</arguments>
+<assign>
+<var>${GLOBAL_SCALAR}</var>
+</assign>
+<msg timestamp="20170806 15:04:03.535" level="INFO">${GLOBAL_SCALAR} = now i changed the value</msg>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${GLOBAL_SCALAR}</arg>
+</arguments>
+<msg timestamp="20170806 15:04:03.535" level="INFO">now i changed the value</msg>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.535"></status>
+</kw>
+<status status="PASS" endtime="20170806 15:04:03.535" critical="yes" starttime="20170806 15:04:03.535"></status>
+</test>
+<doc>List variables example</doc>
+<status status="PASS" endtime="20170806 15:04:03.535" starttime="20170806 15:04:03.482"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="6">Critical Tests</stat>
+<stat fail="0" pass="6">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="ListVariables" pass="6">ListVariables</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
